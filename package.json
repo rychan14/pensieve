@@ -1,0 +1,73 @@
+{
+  "name": "pensieve",
+  "version": "1.0.0",
+  "description": "A look into the Pensieve",
+  "main": "webpack.config.js",
+  "scripts": {
+    "serve": "webpack-dev-server --mode development",
+    "build": "NODE_ENV=production webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rychan14/pensieve.git"
+  },
+  "author": "Ryan Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rychan14/pensieve/issues"
+  },
+  "homepage": "https://github.com/rychan14/pensieve#readme",
+  "dependencies": {
+    "vue": "^3.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-webpack-plugin": "^4.3.0",
+    "stylelint-webpack-plugin": "^2.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.3",
+    "vue-eslint-parser": "^7.1.0",
+    "vue-loader": "^16.0.0-beta.2",
+    "vue-router": "^4.0.0-alpha.12",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.0.0-beta.16",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "extends": [
+      "standard",
+      "plugin:vue/recommended"
+    ]
+  }
+}
