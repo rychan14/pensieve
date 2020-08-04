@@ -61,6 +61,7 @@ module.exports = (env = {}) => ({
   plugins: [
     new ModuleFederationPlugin({
       name: 'pensieve',
+      library: { type: 'var', name: 'pensieve' },
       remotes: {
         chronicler: 'chronicler'
       },
